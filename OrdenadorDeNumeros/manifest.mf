@@ -1,3 +1,20 @@
-Manifest-Version: 1.0
-X-COMMENT: Main-Class will be added automatically by build
+
+package medidas;
+
+public class Medidas {
+
+    
+    public static void main(String[] args) {
+        GrupoEstudiantes grupo = new GrupoEstudiantes(25);
+
+        grupo.leerEstaturas();
+
+        double estaturaMax = grupo.calcularEstaturaMax();
+        double estaturaMin = grupo.calcularEstaturaMin();
+
+        System.out.println("La estatura más alta registrada es: " + estaturaMax + " metros");
+        System.out.println("La estatura más baja registrada es: " + estaturaMin + " metros");
+    }    
+}
+    
 
